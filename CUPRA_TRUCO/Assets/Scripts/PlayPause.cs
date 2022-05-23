@@ -9,16 +9,9 @@ public class PlayPause : MonoBehaviour
     [SerializeField] private Sprite[] buttonSprites;
     [SerializeField] private Image targetButton;
 
-    public AudioClip song1;
-    private AudioSource audioSource;
-
-    private bool paused1;
-    private bool paused2;
 
     private void Start()
     {
-        audioSource = GetComponent<AudioSource>();
-
         
     }
 

@@ -5,13 +5,22 @@ using UnityEngine;
 public class OpenScene : MonoBehaviour
 {
     public List<GameObject> Screens_List;
-    public void OpenAllApps()
+
+    public void OpenHome()
     {
         for (int i = 0; i < Screens_List.Count; i++)
         {
             Screens_List[i].SetActive(false);
         }
         Screens_List[0].SetActive(true);
+    }
+    public void OpenAllApps()
+    {
+        for (int i = 0; i < Screens_List.Count; i++)
+        {
+            Screens_List[i].SetActive(false);
+        }
+        Screens_List[1].SetActive(true);
     }
 
     public void OpenMaps()
@@ -20,7 +29,7 @@ public class OpenScene : MonoBehaviour
         {
             Screens_List[i].SetActive(false);
         }
-        Screens_List[1].SetActive(true);
+        Screens_List[2].SetActive(true);
     }
 
     public void OpenDiscord()
@@ -29,7 +38,9 @@ public class OpenScene : MonoBehaviour
         {
             Screens_List[i].SetActive(false);
         }
-        Screens_List[2].SetActive(true);
+        Screens_List[3].SetActive(true);
     }
+
+    
 
 }
